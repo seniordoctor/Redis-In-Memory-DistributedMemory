@@ -1,8 +1,8 @@
-# UdemyRedisInMemory
+# Redis In Memory & Distributed Memory
 
 Redis Veri Tipleri nelerdir?
 
-	1. Redis String: Sadece string türünde kayıt değil, tek bir key-value datasını kayıt edebiliriz.
+	1. Redis String: Sadece string turunde kayit degil, tek bir key-value datasini kayit edebiliriz.
 		SET name(key) recep(value) --> yeni kayit, eger varolan kayit var ise uzerine yazar ekleme yapmaz.
 		GET name | sname | vs...
 		GETRANGE <key> <start> <end> --> GETRANGE name 0 2 => "rec"
@@ -20,7 +20,7 @@ Redis Veri Tipleri nelerdir?
 		LPOP kitaplar  		  --> dizini basindan siler. Index 0 silinir, RPOP ile dizinin sonundan sileriz.
 		LINDEX kitaplar 1     --> 1. Index'i getirir.
 
- 	3. Redis Set: List veri tipi gibi icerisinde dizin tutabiliriz, 2 onemli farkı var:
+ 	3. Redis Set: List veri tipi gibi icerisinde dizin tutabiliriz, 2 onemli farki var:
  		Dizin icinde tutulacak datalar unique olmali, Random bir sekilde data eklenir basa ve sona eklenmesini biz belirlemiyoruz.
  		SADD renkler mavi --> SET turunde bir key ile ekleme yapariz, value unique olmali
  		SMEMBERS renkler  --> butun value'lari gorebiliriz.
