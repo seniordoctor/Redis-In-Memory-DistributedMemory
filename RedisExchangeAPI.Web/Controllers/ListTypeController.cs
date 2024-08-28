@@ -8,6 +8,7 @@ namespace RedisExchangeAPI.Web.Controllers
 {
     public class ListTypeController : Controller
     {
+        // Redis List, C#'ta bulunan LinkedList yapisina benzer.
         private readonly RedisService _redisService;
         private readonly IDatabase db;
         private string listKey = "names";
