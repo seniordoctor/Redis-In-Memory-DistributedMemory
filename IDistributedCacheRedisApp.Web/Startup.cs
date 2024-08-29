@@ -25,7 +25,7 @@ namespace IDistributedCacheRedisApp.Web
         {
             services.AddStackExchangeRedisCache(options =>
             {
-                options.Configuration = "195.155.147.201:6380";
+                options.Configuration = "<ip>:<port>";
             });
 
             services.AddControllersWithViews();
